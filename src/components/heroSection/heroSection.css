@@ -1,0 +1,23 @@
+#heroSection{
+    padding-top: 10vw;
+    min-height: 80vh;
+    background-color: #fff;
+    color: black;
+}
+
+#main-heroSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 60%;
+    font-size: 3rem;
+    color: #8e7006;
+    text-shadow: 10px 10px 10px #f5c108;
+}
+
+#main-heroSection img{
+    width: 400px;
+    margin: 10px;
+}

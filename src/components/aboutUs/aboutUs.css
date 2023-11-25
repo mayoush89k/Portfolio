@@ -1,0 +1,40 @@
+#aboutUs{
+    /* padding-top: 5vw; */
+    min-height: 100vh;
+    background-color: #8e7006;
+    color: white;
+    
+    padding: 3vw;
+    /* max-width: 80%; */
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-aboutUs{
+    max-width: 70%;    
+    text-align: left;
+}
+
+#personal-img img{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+}
+#personal-img{
+    width: 30%;
+}
+
+.hidden{
+    display: none;
+}
+.more{
+ background-color: #8e7006;   
+}
+
+#btn{
+    color: white;   
+    
+}

@@ -1,0 +1,50 @@
+#contactUs {
+  padding-top: 1vw;
+  top: -10vw;
+  min-height: 70vh;
+  background-color: #f5c108;
+  color: #f5c108;
+}
+#main-contactUs {
+  max-width: 40%;
+  margin: auto;
+  background-color: #8e7006;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-contactUs textarea:focus,
+#main-contactUs input:focus {
+    background-color: #f5c108;
+}
+#main-contactUs textarea::placeholder,
+#main-contactUs input::placeholder {
+  color: #f5c108;
+}
+#main-contactUs textarea,
+#main-contactUs input {
+  padding: 10px;
+  width: 400px;
+  margin: 20px;
+  background-color: transparent;
+  border: transparent dotted 2px;
+  border-bottom: #f5c108 dotted 2px;
+  border-left: #f5c108 dotted 2px;
+}
+#main-contactUs #submit:hover {
+    background-color: #8e7006;
+    box-shadow: 5px 5px 5px #f5c108;
+}
+#main-contactUs #submit {
+  background-color: #f5c108;
+  font-size: 2em;
+  color: #8e7006;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
