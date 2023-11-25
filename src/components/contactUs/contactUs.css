@@ -17,7 +17,7 @@
 
 #main-contactUs textarea:focus,
 #main-contactUs input:focus {
-    background-color: #f5c108;
+  background-color: #f5c108;
 }
 #main-contactUs textarea::placeholder,
 #main-contactUs input::placeholder {
@@ -34,8 +34,8 @@
   border-left: #f5c108 dotted 2px;
 }
 #main-contactUs #submit:hover {
-    background-color: #8e7006;
-    box-shadow: 5px 5px 5px #f5c108;
+  background-color: #8e7006;
+  box-shadow: 5px 5px 5px #f5c108;
 }
 #main-contactUs #submit {
   background-color: #f5c108;
@@ -47,4 +47,23 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+  #main-contactUs textarea,
+  #main-contactUs input {
+    width: 300px;
+  }
+  #main-contactUs {
+    max-width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  #main-contactUs textarea,
+  #main-contactUs input {
+    width: 200px;
+  }
+  #main-contactUs {
+    max-width: 80%;
+  }
 }

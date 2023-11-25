@@ -35,6 +35,12 @@
   background-color: #f5c108;
   color: black;
 }
-.forCode:hover{
+.forCode:hover {
   text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  #main-card {
+    flex-direction: column;
+    font-size: smaller;
+  }
 }

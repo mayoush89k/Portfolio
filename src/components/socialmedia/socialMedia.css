@@ -1,28 +1,49 @@
-#socialMedia{
-    min-height: 50vh;
-    padding-top: 5vw;
-    background-color: #f5c108;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    transition: 0.5s;
+#socialMedia {
+  min-height: 50vh;
+  padding-top: 5vw;
+  background-color: #f5c108;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
 }
-#phone a, #email a, #linkedIn a, #github a{
-    color: #f5c108;
+#phone a,
+#email a,
+#linkedIn a,
+#github a {
+  color: #f5c108;
 }
-#phone, #email, #linkedIn, #github 
-{
-    padding: 10px 50px;
-    background-color: #8e7006;
-    transition: all 0.5s;
-    border-radius: 30%;
+#phone,
+#email,
+#linkedIn,
+#github {
+  padding: 10px 50px;
+  background-color: #8e7006;
+  transition: all 0.5s;
+  border-radius: 30%;
 }
-#phone:hover, #email:hover, #linkedIn:hover, #github:hover {
-    background-color: black;
-    transform: translateY(10px) scale(1.1);
+#phone:hover,
+#email:hover,
+#linkedIn:hover,
+#github:hover {
+  background-color: black;
+  transform: translateY(10px) scale(1.1);
 }
-#icon{
-    width: 150px;
+
+@media (max-width: 1000px) {
+    #phone,
+    #email,
+    #linkedIn,
+    #github {
+      padding: 10px 30px;
+      border-radius: 40%;
+    }
+}
+@media (max-width: 600px) {
+  #socialMedia {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

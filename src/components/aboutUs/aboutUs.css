@@ -1,40 +1,52 @@
-#aboutUs{
-    /* padding-top: 5vw; */
-    min-height: 100vh;
-    background-color: #8e7006;
-    color: white;
-    
-    padding: 3vw;
-    /* max-width: 80%; */
-    display: flex;
-    flex-direction: row;
-    place-items: center;
-    justify-content: space-around;
-    align-items: center;
+#aboutUs {
+  min-height: 100vh;
+  background-color: #8e7006;
+  color: white;
+
+  padding: 3vw;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#main-aboutUs{
-    max-width: 70%;    
-    text-align: left;
+#main-aboutUs {
+  max-width: 70%;
+  text-align: left;
 }
 
-#personal-img img{
-    width: 200px;
-    height: 250px;
-    border-radius: 50%;
+#personal-img img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
 }
-#personal-img{
-    width: 30%;
-}
-
-.hidden{
-    display: none;
-}
-.more{
- background-color: #8e7006;   
+#personal-img {
+  width: 30%;
 }
 
-#btn{
-    color: white;   
-    
+.hidden {
+  display: none;
+}
+.more {
+  background-color: #8e7006;
+}
+
+#btn {
+  color: white;
+}
+
+@media (max-width: 500px) {
+  #aboutUs {
+    padding-top: 10vw;
+    min-height: 40vh;
+    flex-direction: column;
+  }
+  #main-aboutUs {
+    max-width: 90%;
+    font-size: smaller;
+  }
+  #personal-img {
+    width: 20px;
+  }
 }
