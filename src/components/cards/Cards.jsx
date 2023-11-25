@@ -36,11 +36,14 @@ export default function Cards() {
     <div id="card">
         <h2>Some of My work</h2>
       <div id="main-card">
-        {cardsList.map((card) => (
-          <a id="item" href={card.netlify} target="_blanc">
+        {cardsList.map((card,index) => (
+          <a key={index} id="item" href={card.netlify} target="_blanc">
+         
+
             <b>{card.title}</b>
             <p>{card.description}</p>
-            <a href={card.github}>for Code</a><br />
+            <p className="forCode" onClick={()=>window.open(card.github, "_blank") } >for Code</p><br />
+          
           </a>
         ))}
       </div>
