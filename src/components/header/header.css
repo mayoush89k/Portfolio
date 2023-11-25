@@ -8,7 +8,6 @@
   padding: 0 30px;
   margin: 0;
   background-color: black;
-  /* F5C108   8E7006 */
   position: fixed;
   min-width: 95vw;
 }
@@ -43,9 +42,19 @@
     display: block;
   }
   #menu {
-    display: none;
+    font-size: 0.7rem;
+    gap: 6px;
+  }
+  #menu ul {
+    margin: 0 1px;
+    padding: 0;
   }
   #header {
-    width: 100%;
+    width: 98%;
+    padding: 1%;
+  }
+  #logo {
+    width: 35px;
+    height: 35px;
   }
 }
