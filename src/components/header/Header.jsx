@@ -3,14 +3,8 @@ import "./header.css";
 import logo from "../../assets/logo.png";
 import { FaList } from "react-icons/fa6";
 
-export default function Header() {
-  const nav = [
-    {name: "Hero Section" , href: '#heroSection'},
-    { name: "About", href: "#aboutUs" },
-    { name: "Cards", href: "#card" },
-    { name: "Social Media", href: "#socialMedia" },
-    { name: "Contact", href: "#contactUs" },
-  ];
+export default function Header({nav}) {
+
 
   return (
     <div id="header">

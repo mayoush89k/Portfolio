@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import "./aboutUs.css";
 import personal from "../../assets/personal.jpg";
-import { FaAngleUp, FaAngleDown} from "react-icons/fa6";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 
-export default function About() {
-  const [more, showMore] = useState(false)
-  function getIsClickedButton(){
-    return   !more ? "more":"hidden"
-
-  }
-  function getShowMore(){
-   return   more ? "more":"hidden"
-  }
+export default function About({
+  more,
+  showMore,
+  getShowMore,
+  getIsClickedButton,
+}) {
   return (
     <div id="aboutUs">
       <div id="main-aboutUs">
@@ -50,7 +47,13 @@ export default function About() {
             skills
           </li>
         </ul>
-        <button id="btn" className={getIsClickedButton()} onClick={() =>showMore(true)}><FaAngleDown style={{backgroundColor: "#8e7006"}}/> show more</button>
+        <button
+          id="btn"
+          className={getIsClickedButton()}
+          onClick={() => showMore(true)}
+        >
+          <FaAngleDown style={{ backgroundColor: "#8e7006" }} /> show more
+        </button>
         <div id="more" className={getShowMore()}>
           <ul>
             Tools & Technologies
@@ -70,7 +73,13 @@ export default function About() {
             <li>Goal Oriented, Self-Learn</li>
             <li>Time Management</li>
           </ul>
-        <button id="btn" className={getShowMore()} onClick={() =>showMore(false)}><FaAngleUp style={{backgroundColor: "#8e7006"}}/> show less</button>
+          <button
+            id="btn"
+            className={getShowMore()}
+            onClick={() => showMore(false)}
+          >
+            <FaAngleUp style={{ backgroundColor: "#8e7006" }} /> show less
+          </button>
         </div>
       </div>
       <div id="personal-img">
