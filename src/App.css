@@ -42,6 +42,20 @@
 }
 
 /* scroll smoothy between pages*/
-html{
+html {
   scroll-behavior: smooth;
+}
+
+.clickHere a,
+.clickHere {
+  background-color: black;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #f5c108;
+  text-align: right;
+}
+
+.clickHere a{
+  padding-right: 10px;
+
 }

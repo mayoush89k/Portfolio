@@ -28,7 +28,14 @@ export default function About({
         </p>
         <h3>Web Developer Experiences</h3>
         <ul>
-          3 months: <b> Web & App Developer, Willing, Tel-Aviv. (Internship)</b>
+          3 months:
+          <b> Sap/Web Developer, Quantum Vision, Isifya. (Working in Jerusalem){" "}
+          </b>
+          <li>Web and App Development using Front-End.</li>
+        </ul>
+        <ul>
+          3 months:
+          <b> Web & App Developer, Willing, Tel-Aviv. (Internship)</b>
           <li>
             Development and design of websites and applications using Front-End
           </li>

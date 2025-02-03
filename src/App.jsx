@@ -117,6 +117,7 @@ function App() {
         getIsClickedButton={getIsClickedButton}
       />
       <Cards cardsList={cardsList} />
+      <p className="clickHere">For more projects, <a href="https://may-karam.netlify.app/" target="_blank">Click Here</a></p>
       <SocialMedia socialMediaList={socialMediaList} />
       <ContactUs formDetails={formDetails} setFormDetails={setFormDetails} />
       <Footer />
